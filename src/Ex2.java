@@ -11,7 +11,7 @@ public class Ex2 {
     public static void main(String[] args) throws Exception {
         String home = System.getProperty("user.dir");
         if (!"".equals(home)) {
-            File f = new File(home + File.separator + "Test.txt");
+            File f = new File(home + File.separator + "names.txt");
             if (f.isFile()) {
                 Scanner rd = new Scanner(f);
                 while (rd.hasNext()) {
