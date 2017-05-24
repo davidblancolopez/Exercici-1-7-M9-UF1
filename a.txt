@@ -1,0 +1,3 @@
+jar cvf M09uf1a72.jar Ex2.java
+
+java -Djava.security.manager -Djava.security.policy==java.policy -jar M09uf1a72.jar
