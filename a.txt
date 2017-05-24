@@ -1,3 +1,5 @@
 jar cvf M09uf1a72.jar Ex2.java
 
 java -Djava.security.manager -Djava.security.policy==java.policy -jar M09uf1a72.jar
+
+jarsigner -keystore origen.jks M09ufa7-signed.jar -signedjar M09uf1a7.jar desti
