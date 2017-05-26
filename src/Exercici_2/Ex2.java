@@ -1,3 +1,4 @@
+package Exercici_2;
 
 import java.io.File;
 import java.net.ConnectException;
@@ -6,12 +7,21 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Scanner;
 
+/**
+ *
+ * @author Eric
+ */
 public class Ex2 {
 
+    /**
+     * @param args the command line arguments
+     * @throws java.lang.Exception
+     */
     public static void main(String[] args) throws Exception {
         String home = System.getProperty("user.dir");
+        String fs = System.getProperty("file.separator");
         if (!"".equals(home)) {
-            File f = new File(home + File.separator + "names.txt");
+            File f = new File(home + fs + "names.txt");
             if (f.isFile()) {
                 Scanner rd = new Scanner(f);
                 while (rd.hasNext()) {
@@ -31,7 +41,5 @@ public class Ex2 {
                 rd.close();
             }
         }
-
     }
-
 }

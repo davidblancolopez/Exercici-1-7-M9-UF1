@@ -7,18 +7,20 @@ import java.io.FileReader;
  *
  * @author Usuario
  */
-public class TestFileAcces {
+public class Ex1 {
 
+    /*
+    	permission java.security.AllPermission;
+	permission java.io.FilePermission "C/Test.txt", "read";
+    */
     public static void main(String[] args) throws Exception {
         String home = System.getProperty("user.dir");
         System.out.println(home);
         
-//        File fichero = new File("C:\\Test.txt");
+        File fichero = new File("C:\\Test.txt");
 
-
-        File fichero = new File(home + File.separator + "Test.txt");
-        
-        
+        //File fichero = new File(home + File.separator + "Test.txt");
+       
         FileReader fr = new FileReader(fichero);
         BufferedReader buffer = new BufferedReader(fr);
         String cad;
